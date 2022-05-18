@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Нова вкладка</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+
+        <div class="rightP"> 
+            <a href="https://www.google.com.ua/imghp?hl=uk&ogbl" target="_blank" style="color: rgb(99, 98, 98); text-decoration: none;">Зображення </a>
+        </div>
+
+        <hr id="firstL">
+
+        <div class="centre" > 
+            <img src="C:\Users\admin\Desktop\Веб.прог_1\google.jpg" alt="Google"  width="400" > 
+            <form action="https://google.com/search" >        
+                <input type="text" name="q" style="border-radius:20px; height:30px; width: 550px; " maxlenght="100" value="  Введіть пошуковий запит або URL-адресу " class="show"> 
+                <div class="poshuk"> 
+                    <input type="image" src="C:\Users\admin\Desktop\Веб.прог_1\2.jpg" style="border-radius:80px; " width="25" >
+                </div>
+            </form>
+            <a href="https://www.google.com/doodles" class="happy">Мені пощастило</a> 
+        </div>
+        
+
+        <div class="flex">
+            <div class="left">
+                <div class="itm itm1"><a href="https://about.google/" target="_blank" class="btn">Про Google</a></div>
+                <div class="itm itm2"><a href="https://ads.google.com/intl/uk_ua/" target="_blank" class="btn">Реклама</a></div>
+                <div class="itm itm3"><a href="https://www.google.com/services/" target="_blank" class="btn">Для бізнесу</a></div>
+                <div class="itm itm4"><a href="https://www.google.com/search/howsearchworks/" target="_blank" class="btn">Як працює пошук</a></div>
+            </div>
+            <div class="gap"></div>
+            <div class="right">
+                <div class="itm itm5"><a href="https://policies.google.com/privacy" target="_blank" class="btn">Конфіденційність</a></div>
+                <div class="itm itm6"><a href="https://policies.google.com/terms" target="_blank" class="btn">Умови</a></div>
+                <div class="itm itm7 dropdown" id="dd">
+                    <button class="panelBtn"  onclick="dropD()">Налаштування</button>
+                    <div class="dropdown-content-wrapper" id="wrap">
+                        <div class="dropdown-content">
+                        <ul class="nav">
+                            <li><a href="http://surl.li/bxbvz" target="_blank">Довідка щодо пошуку</a></li>
+                            <li><a href="http://surl.li/bxbwb" target="_blank">Історія пошуку</a></li>
+                            <li><a href="http://surl.li/bxbwc" target="_blank">Ваші дані в пошуку</a></li>
+                            <li><a href="http://surl.li/bxbwd" target="_blank">Розширений пошук</a></li>
+                            <li><a href="http://surl.li/bxbwe" target="_blank">Налаштування пошуку</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function dropD(){
+                    document.getElementById('wrap').style = 'display: block;';
+                }
+            document.addEventListener('click', function(event) {
+              var e=document.getElementById('dd');
+              var i=document.getElementById('wrap')
+              if (!e.contains(event.target)) i.style.display='none';
+            });
+        </script>
+    </body>
+</html>
